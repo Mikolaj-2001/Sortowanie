@@ -13,7 +13,13 @@ function bubbleSorting(array) {
                 array[j] = array[j + 1];
 
                 array[j + 1] = temp
+
+                shifted = true;
             }
+        }
+
+        if(!shifted) {
+            break;
         }
     }
 
